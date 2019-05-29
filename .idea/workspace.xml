@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0349b137-4e32-46f1-b414-94d741da3e1f" name="Default Changelist" comment="" />
+    <list default="true" id="0349b137-4e32-46f1-b414-94d741da3e1f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/image/index/img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/index/img1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/index/img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/index/img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/index/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/index/logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/index/my.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/index/my.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/index/seach.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/index/seach.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/index/xiazai.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/index/xiazai.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -25,7 +34,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="27" />
-          <entry key="html" value="30" />
+          <entry key="html" value="33" />
           <entry key="js" value="6" />
           <entry key="json" value="2" />
           <entry key="png" value="11" />
@@ -34,7 +43,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="27" />
-          <entry key="HTML" value="30" />
+          <entry key="HTML" value="33" />
           <entry key="Image" value="11" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="6" />
@@ -44,24 +53,24 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="2696" />
-          <entry key="html" value="4228" />
+          <entry key="html" value="4230" />
           <entry key="js" value="242" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2696" />
-          <entry key="HTML" value="4228" />
+          <entry key="HTML" value="4230" />
           <entry key="JavaScript" value="242" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.51314676">
+    <splitter split-orientation="horizontal" split-proportion="0.73876166">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/html/secondList.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="381">
@@ -69,6 +78,33 @@
                   <folding>
                     <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="409">
+                  <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/html/my.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="428">
+                  <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/html/register.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="202">
+                  <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -118,6 +154,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -135,10 +174,10 @@
         <option value="$PROJECT_DIR$/js/jsMap-4.0.0.min.js" />
         <option value="$PROJECT_DIR$/js/zepto.js" />
         <option value="$PROJECT_DIR$/css/secondList.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/second.css" />
         <option value="$PROJECT_DIR$/html/Second.html" />
         <option value="$PROJECT_DIR$/html/secondList.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -154,6 +193,7 @@
     <option name="width" value="1289" />
     <option name="height" value="767" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -166,6 +206,11 @@
             <path>
               <item name="找房无忧" type="b2602c69:ProjectViewProjectNode" />
               <item name="找房无忧" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="找房无忧" type="b2602c69:ProjectViewProjectNode" />
+              <item name="找房无忧" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,15 +250,16 @@
       <updated>1558940557235</updated>
       <workItem from="1558940558848" duration="15409000" />
       <workItem from="1559002114578" duration="30908000" />
-      <workItem from="1559089623677" duration="4913000" />
+      <workItem from="1559089623677" duration="6618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51230000" />
+    <option name="totallyTimeSpent" value="52935000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12276786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -249,13 +295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/my.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -338,13 +377,6 @@
         <state relative-caret-position="-2436082" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -418,18 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
-          <folding>
-            <element signature="n#form#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/Second.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -453,6 +473,27 @@
           <folding>
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/my.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
         </state>
       </provider>
     </entry>
