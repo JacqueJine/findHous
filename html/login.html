@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<header>
+    <h1><img src="../image/index/logo.jpg" alt=""></h1>
+    <p>
+        <a href="my.html"><img src="../image/index/my.jpg" alt=""></a>
+        <a href=""><img src="../image/index/xiazai.jpg" alt=""></a>
+    </p>
+</header>
+<div class="nav">
+    <a href="../index.html">首页</a> >
+    <a href="my.html">我的</a> >
+    <a href="">登录</a>
+</div>
+<section class="login">
+    <ul>
+        <li class="active">普通登录</li>
+        <li>验证码快捷登录</li>
+    </ul>
+    <div class="show">
+        <ul>
+            <li><input type="text" id="phone" required placeholder="请输入手机号码"></li>
+            <li><input type="password" id="pwd" required placeholder="请输入密码"></li>
+        </ul>
+        <input type="submit" value="立即登录" id="btn">
+    </div>
+    <div class="show none">
+        <ul>
+            <li><input type="number" placeholder="请输入手机号码"><span id="span">发送验证码</span></li>
+            <li><input type="text" placeholder="请输入密码"></li>
+        </ul>
+        <input type="button" value="验证并登录">
+    </div>
+
+</section>
+<div class="reset"><a href="register.html">立即注册</a><a href="">忘记密码？</a></div>
+</body>
+<script src="../js/rem.js"></script>
+<script src="../js/zepto.js"></script>
+<script src="../js/zepto-touch.js"></script>
+<script>
+    $('.login>ul>li:nth-of-type(1)').tap(function () {
+        $(this).addClass('active');
+        $('.login>div:nth-of-type(1)').show();
+        $('.login>ul>li:nth-of-type(2)').removeClass('active');
+        $('.login>div:nth-of-type(2)').hide();
+    });
+    $('.login>ul>li:nth-of-type(2)').tap(function () {
+        $(this).addClass('active');
+        $('.login .none').show();
+        $('.login>ul>li:nth-of-type(1)').removeClass('active');
+        $('.login>div:nth-of-type(1)').hide();
+    });
+    var num = 60;
+    timer = null;
+    $('#span').tap(function () {
+        if (timer != null) {
+            return false;
+        }
+        timer = setInterval(function () {
+            num--;
+            if (num <= 0) {
+                clearInterval(timer);
+                $('#span').text('点击重发');
+                timer = null;
+            } else {
+                $('#span').text('(' + num + ')重发');
+            }
+
+
+        }, 1000)
+    })
+</script>
+<script>
+    $('#btn').tap(function () {
+        $.ajax({
+            url: 'https://www.apiopen.top/login',
+            data: {
+                key: '00d91e8e0cca2b76f515926a36db68f5',
+                phone: $('#phone').val(),
+                passwd: $('#pwd').val()
+            },
+            success: function (data) {
+                console.log(data);
+                if (data.code === 200) {
+                    setTimeout(function () {
+                        window.location.href = '../index.html';
+                    }, 1000);
+                }
+
+            },
+            error: function (err) {
+                throw err;
+            }
+        });
+
+    })
+</script>
+</html>

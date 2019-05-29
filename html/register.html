@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+<header>
+    <h1><img src="../image/index/logo.jpg" alt=""></h1>
+    <p>
+        <a href="my.html"><img src="../image/index/my.jpg" alt=""></a>
+        <a href=""><img src="../image/index/xiazai.jpg" alt=""></a>
+    </p>
+</header>
+<div class="nav">
+    <a href="../index.html">首页</a> >
+    <a href="my.html">我的</a> >
+    <a href="">注册</a>
+</div>
+<div class="show">
+    <ul>
+        <li><input type="text" placeholder="请输入手机号码" required
+                   pattern="^((13[0-9])|(14[0-9])|(15[0-9])|(17[0-9])|(18[0-9]))\d{8}$" id="phone"></li>
+        <li><input type="password" required placeholder="请输入6-12位字母或数字" pattern="^[A-Za-z0-9]{6,12}$" id="pwd"></li>
+    </ul>
+    <input type="submit" value="立即注册" id="btn">
+</div>
+
+</body>
+<!--https://www.apiopen.top/createUser?key=00d91e8e0cca2b76f515926a36db68f5&phone=13594347817&passwd=123654-->
+<script src="../js/rem.js"></script>
+<script src="../js/zepto.js"></script>
+<script src="../js/zepto-touch.js"></script>
+<script>
+    $('#btn').tap(function () {
+        var reg1 = /^((13[0-9])|(14[0-9])|(15[0-9])|(17[0-9])|(18[0-9]))\d{8}$/;
+        var reg2 = /^[A-Za-z0-9]{6,12}$/;
+        if ($('#phone').val() === '' || $('#pwd').val() === '') {
+            $('#phone').val('手机号或密码不能为空！');
+            setTimeout(function(){
+                $('#phone').val('');
+            },1500);
+            return false;
+        } else if (!reg1.test($('#phone').val())) {
+            $('#phone').val('请符合手机号规范');
+            setTimeout(function(){
+                $('#phone').val('');
+            },1500);
+            return false;
+        } else if (!reg2.test($('#pwd').val())) {
+            $('#pwd').val('请符合密码规范');
+            setTimeout(function(){
+                $('#pwd').val('');
+            },1500);
+            return false;
+        }else{
+            $.ajax({
+                url: 'https://www.apiopen.top/createUser',
+                data: {
+                    key: '00d91e8e0cca2b76f515926a36db68f5',
+                    phone: $('#phone').val(),
+                    passwd: $('#pwd').val()
+                },
+                success: function (data) {
+                    alert(data.msg);
+                    if(data.code===200){
+                        setTimeout(function () {
+                            window.location.href = 'login.html';
+                        }, 1000);
+                    }
+
+                },
+                error: function (err) {
+                    throw err;
+                }
+            });
+        }
+
+    })
+</script>
+</html>
